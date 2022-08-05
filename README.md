@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# [TodoList](https://github.com/mingnana/TodoList/index.html)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### 1. 프로젝트 소개
+```md
+* react를 학습하기 위해 만든 todolist 입니다.
+```
 
-## Available Scripts
+#### 2. 프로젝트 기간
+```md
+* 2022.08.1 ~ 2022.08.5
+```
 
-In the project directory, you can run:
+#### 3. 사용 stack 및 tool
+```md
+1) Front-end stack 
+  - React, react library
 
-### `npm start`
+2) IDE
+  - Visual Studio Code
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 4. 프로젝트 설명
+```md
+* Prettier & ESLint, Airbnb Style Guide로 코드 컨벤션 설정
+* 우측 하단 + 버튼 클릭시 할일 추가 가능하며, 기존 일정 클릭시 수정 및 삭제 가능
+* 수정 및 추가에 따른 총 할일 자동 계산
+* new Date()함수 사용하여 현재날짜로 출력됨
+* styled-components, react-icons 사용하여 아이콘 및 css 적용
+```
+![image](https://user-images.githubusercontent.com/96216178/183079005-39464357-4d7a-41f4-acaa-38332ec3c3a8.png)
+![image](https://user-images.githubusercontent.com/96216178/183079170-f2c430c9-33a5-4f60-9ec2-821a6ac14fa7.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+#### 5. 프로젝트 Review
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```md
+ 1) eslint prettier 설정 후 Delete `··` prettier/prettier, Insert `············` prettier/prettier, arrow-body-style, consistent-return, @typescript-eslint/no-shadow 등 수많은 에러 발생 -> eslint-disable 적용하였으나 빈화면이 출력돼 수정이 가능한 부분은 바로바로 수정했고, eslintrc에 작성한 규칙이 적용되지 않는 몇몇 에러들은 임시방편으로 eslint-disable-next-line 적용함.
+ 2) button이 toggle 됐을경우 계속 css가 적용이 돼있거나, 날짜를 기록할수있도록 하는 기능을 연구해보면 더 좋을듯함
+```
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
