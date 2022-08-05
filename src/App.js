@@ -16,6 +16,9 @@ function App() {
   const [selectedTodo, setSelectedTodo] = useState('');
   const [insertToggle, setInsertToggle] = useState(false);
   const onInsertToggle = () => {
+    if(selectedTodo){
+      setSelectedTodo(null);
+    }
     setInsertToggle(prev => !prev)
   }
   const onInsertTodo = (text)=> {
@@ -57,7 +60,11 @@ function App() {
     const onRemove = id => {
       onInsertToggle();
       setTodos(todos => todos.filter(todo => todo.id !== id))
-  }
+    }
+    const onUpdate = (id, text) => {
+      onInsertToggle();
+      setTodos(todos => todos.map(todo=> todo.id === id ? {...todo, text} : todo))
+    }
     return (
         <>
             <GlobalStyle />
@@ -77,6 +84,7 @@ function App() {
                   onInsertToggle={onInsertToggle}
                   onInsertTodo={onInsertTodo}
                   onRemove={onRemove}
+                  onUpdate={onUpdate}
                   />
                 )}
             </Template>

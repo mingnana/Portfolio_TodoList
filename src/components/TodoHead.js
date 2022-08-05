@@ -1,5 +1,4 @@
 import style from 'styled-components'
-// import { useTodoState } from './TodoContext';
 
 const TodoHeaddiv = style.div`
     padding:48px 32px 24px;
@@ -22,15 +21,19 @@ const TodoHeaddiv = style.div`
     }
 `
 
-function TodoHead(){
-    // const todos = useTodoState();
-    // const undoneTasks = todos.filter(todo => !todo.done); // done이 false인 객체들
+function TodoHead({todosLength}){
+    const today = new Date();
+    const date = today.toLocaleString('ko-KR', {
+        year : 'numeric',
+        month : 'long',
+        day : 'numeric'
+    });
+    const day = today.toLocaleDateString('ko-KR', { weekday: 'long' });
     return (
         <TodoHeaddiv>
-            <h1>2022년 8월 1일</h1>
-            <div className="day">월요일</div>
-            {/* <div className="tasks-left">할일 {undoneTasks.length}개 남음</div> */}
-            <div className="tasks-left">할일 개 남음</div>
+            <h1>{date}</h1>
+            <div className="day">{day}</div>
+            <div className="tasks-left">총 할일 {todosLength}개</div>
         </TodoHeaddiv>
     )
 }
