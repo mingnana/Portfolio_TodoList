@@ -1,4 +1,4 @@
-# [TodoList](https://github.com/mingnana/TodoList/tree/gh-pages/index.html)
+# [TodoList](https://mingnana.github.io/TodoList/)
 
 #### 1. 프로젝트 소개
 ```md
