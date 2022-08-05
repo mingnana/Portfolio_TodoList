@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mingnana/TodoList.git/static/css/main.d7311f26.css",
+    "main.js": "/mingnana/TodoList.git/static/js/main.a980bfa1.js",
+    "index.html": "/mingnana/TodoList.git/index.html",
+    "main.d7311f26.css.map": "/mingnana/TodoList.git/static/css/main.d7311f26.css.map",
+    "main.a980bfa1.js.map": "/mingnana/TodoList.git/static/js/main.a980bfa1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7311f26.css",
+    "static/js/main.a980bfa1.js"
+  ]
+}
