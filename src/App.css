@@ -1,28 +1,25 @@
-.add-todo-btn{
+.add-todo-btn {
   background: #ff7700;
-/* // &:active {
-//   background: #20c997;
-// } */
-
-z-index: 100;
-cursor: pointer;
-width: 60px;
-height: 60px;
-display: block;
-align-items: center;
-justify-content: center;
-font-size: 60px;
-position: absolute;
-right:20px;
-bottom:20px;
-color: #fff;
-border-radius: 50%;
-border: none;
-outline: none;
-display: flex;
-transition: 0.125s all ease-in;
+  z-index: 100;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  transition: 0.125s all ease-in;
 }
 
-.add-todo-btn:hover{
-  background:#63e6be;
+.add-todo-btn:hover {
+  background: #fa5252;
+  transform: rotate(45deg);
 }
