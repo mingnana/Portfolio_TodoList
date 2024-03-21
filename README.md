@@ -1,4 +1,4 @@
-# [TodoList](https://mingnana.github.io/Portfolio_TodoList/)
+# [TodoList](https://mingnana.github.io/TodoList/)
 
 #### 1. 프로젝트 소개
 ```md
